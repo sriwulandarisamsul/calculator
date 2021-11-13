@@ -1,0 +1,126 @@
+body {
+    background: #ecf0f3;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+    outline: none;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    padding: 16px;
+    border-radius: 20px;
+    background-color:#778899 ;
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    box-shadow: inset 5px 5px 12px #fff , -5px -5px 12px rgba(0, 0, 0, 0.16);
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+input {
+    height: 70px;
+    width: 300px;
+    grid-column: span 4;
+    background-color: #ecf0f3;
+    box-shadow: inset 2px 2px 12px #fff , -2px -2px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 30px;
+    color: rgba(70, 70, 70);
+    font-size: 45px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #ecf0f3;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-family: monospace;
+    border-radius: 30px;
+    box-shadow: -2px -2px 12px #fff , 2px 2px 12px rgba(0, 0, 0, 0.16);
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.hasil {
+    width: 130px;
+    border-radius: 45px;
+    border: none;
+    background-color: #FFA500;
+    
+}
+
+.clr {
+    background-color: #FF0000 ;
+}
+
+.del , .rank , .bagi , .kali , .kurang , .tambah {
+    background-color: #66CDAA;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .container{
+		width: 100%;
+		float: none;
+	}
+
+    label {
+        font-weight: bold;
+        font-size: 25px;
+        padding-left: 10px;
+        margin-top: 15px;
+    }
+    
+    input {
+        height: 70px;
+        width: 300px;
+        grid-column: span 4;
+        background-color: #ecf0f3;
+        box-shadow: inset 2px 2px 12px #fff , -2px -2px 12px rgba(0, 0, 0, 0.16);
+        border: none;
+        border-radius: 30px;
+        color: rgba(70, 70, 70);
+        font-size: 45px;
+        text-align: end;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    button {
+        background-color: #ecf0f3;
+        height: 50px;
+        width: 50px;
+        border: none;
+        font-family: monospace;
+        border-radius: 30px;
+        box-shadow: -2px -2px 12px #fff , 2px 2px 12px rgba(0, 0, 0, 0.16);
+        margin: 10px;
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+    }
+    
+}
